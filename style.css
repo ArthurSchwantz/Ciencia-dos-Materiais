@@ -157,7 +157,7 @@ img {
 
 .metal-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
   gap: 18px;
   width: min(1180px, 100%);
   margin: 0 auto;
@@ -191,6 +191,13 @@ img {
   background-position: center;
   transform: scale(1);
   transition: transform 0.35s ease;
+}
+
+.tile-icon {
+  background-size: auto 70%;
+  background-repeat: no-repeat;
+  background-position: center 38%;
+  background-color: rgba(30, 44, 64, 0.92);
 }
 
 .metal-tile:hover .tile-image,
@@ -456,6 +463,12 @@ tbody tr:last-child td {
   min-height: 260px;
 }
 
+.metal-icon-visual {
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle, rgba(80, 194, 215, 0.12), transparent 70%), #0f1b2a;
+}
+
 .metal-visual img {
   width: 100%;
   height: 100%;
@@ -463,10 +476,25 @@ tbody tr:last-child td {
   display: block;
 }
 
+.metal-icon-visual img {
+  object-fit: contain;
+  padding: 48px;
+}
+
 .page-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
+}
+
+.examples-section {
+  margin-top: 36px;
+}
+
+.examples-heading {
+  margin: 0 0 20px;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  letter-spacing: -0.04em;
 }
 
 .feature-card {
